@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <%= form_for(episode) do |form| %>
+      <%= form.text_field :identifiant %>
+      <%= form.text_field :seasonNumber %>
+      <%= form.text_field :episodeNumber %>
+      <%= form.text_field :title %>
+    <%= form.button :submit, value: "Ajouter" %>
+  <% end %>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <%= simple_form_for(user) do |f| %>
+      <%= f.input :email %>
+      <%= f.input :password_encrypted %>
+      <%= f.button :submit, value: "Inscription" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,2 @@
+class SeenEpisodeSeriesController < ApplicationController
+end

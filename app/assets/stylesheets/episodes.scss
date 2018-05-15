@@ -1,0 +1,31 @@
+$green: #33aa79;
+$gray-light: #eef3ee;
+$gray-dark: #999;
+
+.episodes {
+  h1 {
+    text-align: center;
+    color: $green;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+.episode {
+  margin-bottom: 20px;
+  background: $gray-light;
+  padding: 20px;
+
+  //img {
+  //  @include box-shadow(4px 4px 5px rgba(0, 0, 0, .3));
+  //  max-width: 100%;
+  //}
+
+  .comment {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray-dark;
+  }
+}

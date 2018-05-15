@@ -1,0 +1,2 @@
+class CurrentWatchSeriesController < ApplicationController
+end

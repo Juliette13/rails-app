@@ -1,0 +1,2 @@
+module CurrentWatchSeriesHelper
+end

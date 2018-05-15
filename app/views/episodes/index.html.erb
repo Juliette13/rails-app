@@ -1,0 +1,19 @@
+<h1>Liste des épisodes</h1>
+  <div class="episodes">
+    <h1>Tous nos épisodes</h1>
+    <div class="series">
+      <%- @series.each do |serie| -%>
+        <div class="col-sm-4">
+            <%= serie.titre %>
+        </div>
+          <%- @episodes.each do |episode| -%>
+          <section class="row episode">
+            <div class="col-sm-8">
+              <h2><%= episode.identifiant %></h2>
+              <h3><%= episode.title %></h3>
+            </div>
+          </section> 
+        <% end %> 
+      <% end %>
+    </div>
+  </div>
