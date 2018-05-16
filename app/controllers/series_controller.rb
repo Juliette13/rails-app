@@ -21,6 +21,8 @@ class SeriesController < ApplicationController
     
     if @serie.valid?
       @serie.save!
+
+      #redirect_to serie_path(@serie)
     else
       render :new
     end
