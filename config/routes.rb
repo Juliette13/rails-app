@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
-  #get 'series/index'
+  get 'series/index'
 
   devise_for :users
   resources :marks
   resources :seen_episode_series
   resources :current_watch_series
   resources :episodes
-  resources :series, only: [:show]
+  resources :series
   resources :users
-  get 'series/index'
   get 'welcome/index'
   root :to => "series#index"
 
