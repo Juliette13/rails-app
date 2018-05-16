@@ -5,12 +5,11 @@
     <%- @series.each do |serie| -%>
         <section class="row serie">
           <div class="col-sm-8">
-          <h1><%= serie.titre %></h1>
+          <h1><%= link_to(serie.titre, serie_path(serie)) %></h1>
           </div>
           <div class="col-sm-4">
             <section>
               <% serie.episodes.each do |episode| %>
-                <a href="">Titre <%= episode.title %></a>
                Titre <%= episode.title %> <br>
                Episode <%= episode.seasonNumber %> x <%= episode.episodeNumber %> <br>
                Date <%= episode.diffusionDate %>
