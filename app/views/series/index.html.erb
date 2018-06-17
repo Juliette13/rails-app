@@ -10,7 +10,7 @@
           <div class="col-sm-4">
             <section>
               <% serie.episodes.each do |episode| %>
-               Titre <%= link_to(episode.title, episode_path(episode)) %> <br>
+               Titre <%= link_to(episode.title, series_path(episode)) %> <br>
                Episode <%= episode.seasonNumber %> x <%= episode.episodeNumber %> <br>
                Date <%= episode.diffusionDate %>
            </section>
