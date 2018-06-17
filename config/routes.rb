@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'series/index'
-  get 'series/episodes'
+  get 'series/show'
 
   devise_for :users
   resources :marks
