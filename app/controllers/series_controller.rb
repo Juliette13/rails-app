@@ -7,7 +7,7 @@ class SeriesController < ApplicationController
   end
   
   def show
-    @serie = Serie.find(params[:id])
+    @serie = Episode.find(params[:id])
   end
   
   def new
