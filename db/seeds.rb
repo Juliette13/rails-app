@@ -19,8 +19,12 @@ userJuliette = User.create(email: "julietteverlaine@ynow.com", password: "coucou
 serieBreakingBad = Serie.create!(titre: "Breaking Bad", image: "/img/serie/breaking.jpeg")
 serieBorgia = Serie.create!(titre: "Borgia", image: "/img/serie/borgia.jpg")
 
-episodeBB1x01 = Episode.create!(identifiant: "1x01", seasonNumber: "1", episodeNumber: "1", title: "Episode 1", diffusionDate: "2009-12-31", serie: serieBreakingBad)
-episodeBB1x02 = Episode.create!(identifiant: "1x02", seasonNumber: "1", episodeNumber: "2", title: "Episode 1", diffusionDate: "2009-12-31", serie: serieBorgia)
+episodeBB1x01 = Episode.create!(identifiant: "1x01", seasonNumber: "1", episodeNumber: "1", title: "Chute libre", diffusionDate: "2009-10-20", serie: serieBreakingBad)
+episodeBB1x02 = Episode.create!(identifiant: "1x02", seasonNumber: "1", episodeNumber: "2", title: "Le choix", diffusionDate: "2009-10-20", serie: serieBreakingBad)
+episodeBB1x03 = Episode.create!(identifiant: "1x03", seasonNumber: "1", episodeNumber: "3", title: "Dérapage", diffusionDate: "2009-10-27", serie: serieBreakingBad)
+episodeB1x01 = Episode.create!(identifiant: "1x01", seasonNumber: "1", episodeNumber: "2", title: "1492", diffusionDate: "2010-12-31", serie: serieBorgia)
+episodeB1x02 = Episode.create!(identifiant: "1x02", seasonNumber: "1", episodeNumber: "2", title: "Onde de chaleur", diffusionDate: "2010-12-31", serie: serieBorgia)
+episodeB1x03 = Episode.create!(identifiant: "1x03", seasonNumber: "1", episodeNumber: "2", title: "Un voeu sacré", diffusionDate: "2010-12-31", serie: serieBorgia)
 
 currentViewJuliette = CurrentWatchSerie.create!(serie: serieBreakingBad, user: userJuliette)
 currentViewPaul = CurrentWatchSerie.create!(serie: serieBorgia, user: userPaul)
