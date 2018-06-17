@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'series/index'
-  get 'series/show'
+  get 'series/index' => 'series#index'
+  get 'series/show' => 'series#show'
 
   devise_for :users
   resources :marks
